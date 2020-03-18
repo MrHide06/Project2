@@ -1,0 +1,138 @@
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: grey;
+}
+
+ul.topnav li{
+    float: left;
+}
+
+ul.topnav li a{
+    display:inline-block;
+    color:#f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+ul.topnav li a:hover{
+    background-color: grey;
+}
+
+ul.topnav li.icon{
+    display: none;
+}
+
+@media screen and (max-width:680px){
+    ul.topnav li:not(:first-child){display: none;}
+    ul.topnav li.icon{
+        float: right;
+        display:inline-block
+    }
+    .container{
+        width: 400px;
+        height: 200px;
+    }
+
+    .container-card{
+        width: auto;
+        height: auto;
+    }
+    
+    .foto{
+        display: flex;
+    }
+}
+
+@media screen and (max-width:680px){
+    ul.topnav.responsive {position:relative;}
+    ul.topnav.responsive li.icon{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    ul.topnav.responsive li{
+        float:none;
+        display: inline;
+    }
+    ul.topnav.responsive li a{
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width:680px){
+    .container-card{
+        width: 1250px;
+        height: 500px;
+    }
+
+}
+
+body{
+    margin:0;
+}
+
+.container{
+    display: flex;
+    margin:0 auto;
+    margin-top: 10px;
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, .03);
+    transition: all .3s;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.container-card{
+    display: flex;
+    margin: 0 auto;
+    padding-top: 10px;
+    background-color: #e8e8e8;
+    transition: all .3s;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+
+.col-md-4{
+    display: flex;
+    margin-left: 150px;
+    max-width: 33.333333%;
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.col-md-8{
+    font-size: 24px;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.col-md-8 .col-md-4{
+    position: relative;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/* .card{
+    position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: ce;
+  width: 100%;
+  word-wrap: break-word;
+  background-clip: border-box;
+} */
